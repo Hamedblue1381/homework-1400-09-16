@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #btndate{
+            background-color: cyan;
+            transition: all ease 0.5s;
+            position: fixed;
+            text-align: center;
+        }
+        #btndate:hover{
+            border-radius: 20px;
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+<p style="text-align: center">برای روز هفته کلیک کنید</p>
+<button type="button" id="btndate" onclick="date()">روز هفته</button>
+<script>
+    function date(){
+        var message;
+        switch(new Date().getDay()){
+            case 0:
+                message=window.alert("یکشنبه");
+                break;
+            case 1:
+                message=window.alert("دوشنبه");
+                break;
+            case 2:
+                message=window.alert("سه شنبه");
+                break;
+            case 3:
+                message=window.alert("چهارشنبه");
+                break;
+            case 4:
+                message=window.alert("پنج شنبه");
+                break;
+            case 5:
+                message=window.alert("جمعه");
+                break;
+            case 6:
+                message=window.alert("شنبه");
+                break;
+        }
+    }
+</script>
+</body>
+</html>
